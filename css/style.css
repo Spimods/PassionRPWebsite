@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body{
+    background-color: black;
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #202020;
+}
+body::-webkit-scrollbar
+{
+	width: 8px;
+	background-color: #000;
+}
+body::-webkit-scrollbar-thumb
+{
+	border-radius: 0;
+	-webkit-box-shadow: inset 0 0 6px rgba(33, 33, 33, 0.3);
+    background: linear-gradient(180deg, rgb(248, 127, 27) 0%, rgba(248,44,42,1) 100%);
+}
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 90%);
+    z-index: -1;
+}
+.page{
+    clip-path: polygon(0 3%, 100% 0, 100% 100%, 0 100%);
+    background: white;
+    height: 100rem;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 80%;
+}
+.box1 {
+    background-color: #ff00000f;
+    width: 80%;
+    height: 20%;
+    top: -5%;
+    left: 10%;
+    position: relative;
+    border-radius: 10px;
+}
+.header {
+    font-family: 'Fjalla One', sans-serif;
+    width: 99%;
+    z-index: 11;
+    position: fixed;
+    overflow: hidden;
+    background-color: transparent;
+    padding: 12px 10px;
+  }
+  
+  .header a {
+    font-weight: bolder;
+    font-family: 'Fjalla One', sans-serif;
+    float: left;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  #fontop{
+    background: linear-gradient(12deg, rgba(248,198,27,1) 0%, rgba(248,44,42,1) 100%);
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:transparent;
+    text-shadow: #f86d24 1px 0 10px;
+  }
+  #fontop.active, #fontop:hover {
+    background: radial-gradient(circle, rgba(253,29,29,1) 43%, rgba(252,176,69,1) 100%);
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:transparent;
+    text-shadow: rgba(248,44,42,1) 1px 0 10px;
+
+  }
+  .header a.logo {
+    padding: 0px;
+    width: 51px;
+    height: 60px;
+    background-image: url(/image/logo/logo.png);
+    background-size: cover;
+  }
+  
+  .header a.logo:hover {
+    background-color: transparent;
+  }
+
+.header-right {
+    float: right;
+  }
+  .phrase{
+    position: absolute;
+    font-size: 40px;
+    max-width: 90%;
+    left: 5%;
+    top: 30%;
+    font-family: "Inter", Sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 65px;
+    -webkit-text-stroke-width: 0px;
+    stroke-width: 0px;
+    text-align: center;
+    color: #fff;
+    
+}
+.passion{
+    background: linear-gradient(12deg, rgba(248,198,27,1) 0%, rgba(248,44,42,1) 100%);
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:transparent;
+    text-shadow: #f86d24 1px 0 10px;
+
+}
+.bouton {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    top: 70%;
+}
+.bouton a{
+    background: linear-gradient(12deg, rgba(248,198,27,1) 0%, rgba(248,44,42,1) 100%);
+    padding: 15px 10px;
+    border-radius: 10px;
+    position: relative;
+    font-family: "Inter", Sans-serif;
+    -webkit-box-shadow: 0px 0px 15px 8px #ef5503;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 65px;
+    -webkit-text-stroke-width: 0px;
+    stroke-width: 0px;
+    text-align: center;
+    color: #fff;
+    animation-duration: 3s;
+}
+.bouton a:hover{
+    -webkit-box-shadow: 0px 0px 15px 12px #ef5503;
+}
+.img, .img2{
+    background-size: cover;
+    position: absolute;
+    height: 70px;
+
+}
+.img2{
+    background-image: url(/image/autre/argent.png);
+    margin-left: -45%;
+    top: 5px;
+    width: 90px;
+
+}
+.img{
+    background-image: url(/image/persos/perso.png);
+    margin-left: -8%;
+    top: -25%;
+    width: 70px;
+
+}
+.box1 .image{
+    border-radius: 10px;
+    background-image: url(/image/voitures/voiture2.png);
+    background-size: cover;
+    width: 40%;
+    height: 100%;
+}
+.texte{
+        top: 2%;
+        position: absolute;
+        max-width: 55%;
+        left: 42.5%;
+        font-family: 'Fjalla One', sans-serif;
+        float: left;
+        text-align: center;
+        font-size: 18px;
+        line-height: 25px;
+}
+.textemini{
+    top: 50%;
+    position: absolute;
+    max-width: 55%;
+    left: 42.5%;
+    font-family: 'Fjalla One', sans-serif;
+    float: left;
+    text-align: center;
+    font-size: 15px;
+    line-height: 25px;
+}
+.surbri{
+    background: linear-gradient(12deg, rgba(248,198,27,1) 0%, rgba(248,44,42,1) 100%);
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:transparent;
+
+}
+.box2{
+    background-color: #ff5a000f;
+    width: 80%;
+    height: 20%;
+    top: 5%;
+    left: 10%;
+    position: relative;
+    border-radius: 10px;
+}
+.box2 .image{
+    position: absolute;
+    border-radius: 10px;
+    background-image: url(/image/maisons/maison1.png);
+    background-size: cover;
+    width: 40%;
+    height: 100%;
+    left: 60%;
+}
+.texte2{
+    top: 2%;
+    position: absolute;
+    max-width: 55%;
+    left: 2.5%;
+    font-family: 'Fjalla One', sans-serif;
+    float: left;
+    text-align: center;
+    font-size: 18px;
+    line-height: 25px;
+}
+.textemini2{
+top: 50%;
+position: absolute;
+max-width: 55%;
+left: 2.5%;
+font-family: 'Fjalla One', sans-serif;
+float: left;
+text-align: center;
+font-size: 15px;
+line-height: 25px;
+}
+.box3{
+    background-color: #ffef000f;
+    width: 80%;
+    height: 20%;
+    top: 15%;
+    left: 10%;
+    position: relative;
+    border-radius: 10px;
+}
+.box3 .image{
+    position: absolute;
+    border-radius: 10px;
+    background-image: url(/image/persos/perso.png);
+    background-size: cover;
+    width: 40%;
+    height: 100%;
+    left: 0%;
+}
+.texte3{
+    top: 2%;
+    position: absolute;
+    max-width: 55%;
+    left: 42.5%;
+    font-family: 'Fjalla One', sans-serif;
+    float: left;
+    text-align: center;
+    font-size: 18px;
+    line-height: 25px;
+}
+.textemini3{
+top: 50%;
+position: absolute;
+max-width: 55%;
+left: 42.5%;
+font-family: 'Fjalla One', sans-serif;
+float: left;
+text-align: center;
+font-size: 15px;
+line-height: 25px;
+}
+.display {
+    height: 20%;
+    width: 100%;
+    background: #ff910044;
+    clip-path: polygon(0 0, 100% 0, 100% 20%, 0 35%);
+}
+
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+  }
